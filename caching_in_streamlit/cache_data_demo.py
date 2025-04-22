@@ -23,7 +23,7 @@ def fetch_more_data():
 st.write("Fetching")
 data = fetch_data()  # function is called only after 60 seconds.
 st.write(data)
-
+st.button("Fetch Data", on_click=fetch_data)
 
 @st.cache_data(ttl=120)  # Cache gets cleared after 120 seconds
 def fetch_user(uid: str):
