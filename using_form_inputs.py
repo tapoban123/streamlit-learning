@@ -32,6 +32,9 @@ with st.form("form_demo"):
     form_values["age"] = st.number_input("Enter your age", min_value=10)
     form_values["password"] = st.text_input("Enter your password", type="password")
     form_values["feedback"] = st.text_area("Provide your feedback")
+    
+    # Uploads
+    st.file_uploader("Upload profile picture")
 
     # Date and time inputs
     form_values["date"] = st.date_input(
